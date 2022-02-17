@@ -13,7 +13,7 @@ void Counter::Init(void)
 
     // Turn Count and Reset methods into EntryPoints
     count = new CounterEntryPoint("Count", "Increment Counter", this, &Counter::Count);
-    reset = new CounterEntryPoint("Reset", "Reset Counter", this, &Counter::Reset);
+   // reset = new CounterEntryPoint("Reset", "Reset Counter", this, &Counter::Reset);
 }
 
 // Log a message to the logger on Reset
