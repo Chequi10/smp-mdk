@@ -4,7 +4,7 @@
 void CounterClass::Count(void)
 {
     counter++;
-    std::cout << "otra forma " << counter << std::endl;
+    std::cout << "otra manera" << counter << std::endl;
 }
 
 void CounterClass::Reset(void)
