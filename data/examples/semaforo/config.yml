@@ -7,9 +7,4 @@ models:
     class: Counter
     libname: counter/libcounter.so
     params: 
-      frequency: 2.0
-  - name: counter2
-    class: Counter
-    libname: counter/libcounter.so
-    params: 
       frequency: 1.0
