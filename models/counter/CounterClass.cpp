@@ -4,18 +4,7 @@
 void CounterClass::Count(void)
 {
     counter++;
-   
-    switch (counter)
-    {
-     case 1:printf ("\n rojo");
-     break ;
-     case 2: printf ("\n amarillo ");
-     break ;
-     case 3: printf("\n verde");
-     break;
-     default: CounterClass::Reset();
- }
- 
+    std::cout << "otra manera" << counter << std::endl;
 }
 
 void CounterClass::Reset(void)
