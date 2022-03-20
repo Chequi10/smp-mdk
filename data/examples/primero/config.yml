@@ -3,8 +3,8 @@
 # Models
 models_path: "../../../build/models/"
 models:
-  - name: counter1
+  - name: semaforo
     class: Counter
-    libname: counter/libsemaforo.so
+    libname: primero/libprimero.so
     params: 
       frequency: 1.0

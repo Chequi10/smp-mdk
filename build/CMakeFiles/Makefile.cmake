@@ -19,7 +19,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../models/counter/CMakeLists.txt"
   "../models/counter_rpc/CMakeLists.txt"
   "../models/network/CMakeLists.txt"
-  "../models/semaforo/CMakeLists.txt"
+  "../models/primero/CMakeLists.txt"
   "../simulator/CMakeLists.txt"
   "../tests/CMakeLists.txt"
   "/snap/cmake/1035/share/cmake-3.22/Modules/CMakeCInformation.cmake"
@@ -100,7 +100,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "models/counter/CMakeFiles/CMakeDirectoryInformation.cmake"
   "models/network/CMakeFiles/CMakeDirectoryInformation.cmake"
   "models/counter_rpc/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "models/semaforo/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "models/primero/CMakeFiles/CMakeDirectoryInformation.cmake"
   "simulator/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -113,7 +113,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "models/counter/CMakeFiles/counter.dir/DependInfo.cmake"
   "models/network/CMakeFiles/network.dir/DependInfo.cmake"
   "models/counter_rpc/CMakeFiles/counter_rpc.dir/DependInfo.cmake"
-  "models/semaforo/CMakeFiles/semaforo.dir/DependInfo.cmake"
+  "models/primero/CMakeFiles/primero.dir/DependInfo.cmake"
   "simulator/CMakeFiles/simulator.dir/DependInfo.cmake"
   "tests/CMakeFiles/tests.dir/DependInfo.cmake"
   )

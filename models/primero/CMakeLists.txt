@@ -4,7 +4,7 @@ find_package(Boost COMPONENTS system filesystem REQUIRED)
 find_package (yaml-cpp)
 
 # set the project name
-project(semaforo)
+project(primero)
 
 # add the executable
 add_library(${PROJECT_NAME} SHARED

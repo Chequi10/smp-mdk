@@ -314,6 +314,18 @@ network_LIB_DEPENDS:STATIC=general;Boost::filesystem;general;Boost::system;gener
 network_SOURCE_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/models/network
 
 //Value Computed by CMake
+primero_BINARY_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/build/models/primero
+
+//Value Computed by CMake
+primero_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+primero_LIB_DEPENDS:STATIC=general;Boost::filesystem;general;Boost::system;general;pthread;
+
+//Value Computed by CMake
+primero_SOURCE_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/models/primero
+
+//Value Computed by CMake
 semaforo_BINARY_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/build/models/semaforo
 
 //Value Computed by CMake

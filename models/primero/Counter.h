@@ -60,7 +60,7 @@ private:
 
     // FIXME: explain
     double frequency;
-    
+
 public:
     Counter(Smp::String8 name, Smp::IComposite *parent) : CounterClass()
     {
