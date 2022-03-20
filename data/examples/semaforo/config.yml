@@ -5,7 +5,7 @@ models_path: "../../../build/models/"
 models:
   - name: counter1
     class: Counter
-    libname: counter/libcounter.so
+    libname: counter/libsemaforo.so
     params: 
       frequency: 1.0
       rojo: 1
