@@ -8,6 +8,3 @@ models:
     libname: counter/libsemaforo.so
     params: 
       frequency: 1.0
-      rojo: 1
-      amarillo: 2
-      verde: 3

@@ -60,8 +60,7 @@ private:
 
     // FIXME: explain
     double frequency;
-    int rojo, amarillo, verde;
-
+    
 public:
     Counter(Smp::String8 name, Smp::IComposite *parent) : CounterClass()
     {

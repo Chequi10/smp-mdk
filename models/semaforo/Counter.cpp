@@ -13,7 +13,7 @@ void Counter::Init(void)
 
     // Turn Count and Reset methods into EntryPoints
     count = new CounterEntryPoint("Count", "Increment Counter", this, &Counter::Count);
-    reset = new CounterEntryPoint("Reset", "Reset Counter", this, &Counter::Reset);
+  // reset = new CounterEntryPoint("Reset", "Reset Counter", this, &Counter::Reset);
 }
 
 // Log a message to the logger on Reset
@@ -85,8 +85,4 @@ extern "C" void destroy_Counter( Smp::IModel* obj )
 void Counter::ReadInitializationParameters(const YAML::Node& paramsNode)
 {    
     this->frequency =  paramsNode["frequency"].as<double>();
-    this->rojo =  paramsNode["rojo"].as<int>();
-    this->amarillo =  paramsNode["amarillo"].as<int>();
-    this->verde =  paramsNode["verde"].as<int>();
-
 }
