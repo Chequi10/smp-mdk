@@ -8,3 +8,6 @@ models:
     libname: counter/libcounter.so
     params: 
       frequency: 1.0
+      rojo: 1.0
+      amarillo: 2.0
+      verde: 3.0
