@@ -7,7 +7,10 @@ class CounterClass
 {
     protected:
         Smp::Int64 counter;     // Protected field to store counter
-
+        int rojo = 0;
+        int amarillo = 0;
+        int verde = 0;
+        int estado=1;
     public:
         
         // Public methods to count, to reset and to return the counter
