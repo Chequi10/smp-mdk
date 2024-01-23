@@ -13,7 +13,7 @@ void Counter::Init(void)
 
     // Turn Count and Reset methods into EntryPoints
     count = new CounterEntryPoint("Count", "Increment Counter", this, &Counter::Count);
-   // reset = new CounterEntryPoint("Reset", "Reset Counter", this, &Counter::Reset);
+    reset = new CounterEntryPoint("Reset", "Reset Counter", this, &Counter::Reset);
 }
 
 // Log a message to the logger on Reset
@@ -60,7 +60,7 @@ void Counter::Connect(Smp::ISimulator *simulator)
         scheduler = simulator->GetScheduler();
         //eventManager = simulator->GetEventManager();
         
-        scheduler->AddSimulationTimeEvent(count, 0, this->frequency * 1000000000, -1);
+        scheduler->AddSimulationTimeEvent(count, 0, this->frequency * 100000000, -1);
         //eventManager->Subscribe(Smp::Services::SMP_EnterStandbyId, reset);
     }
     else

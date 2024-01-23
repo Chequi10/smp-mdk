@@ -1,0 +1,40 @@
+# Example configuration for a network with a master and several slaves.
+#
+# Bus
+#  |--- NODE_A  [Master]
+#  |--- NODE_B  [Slave]
+#  |--- NODE_C  [Slave]
+#  |--- ... 
+
+# Models
+models_path: "../../../build/models/"
+models:  
+  - name: bus
+    class: Bus
+    libname: Red_CAN/libRed_CAN.so
+    params:
+      nodes:
+        - Ezequiel_Fernanda
+        - node_b 
+        - node_c
+  - name: Ezequiel_Fernanda
+    class: Node
+    libname: Red_CAN/libRed_CAN.so
+    params:
+      id: 10
+      len: 12
+      master: true
+  - name: node_b
+    class: Node
+    libname: Red_CAN/libRed_CAN.so
+    params:
+      id: 11
+      len: 23
+      master: false
+  - name: node_c
+    class: Node
+    libname: Red_CAN/libRed_CAN.so
+    params:
+      id: 12
+      len: 45
+      master: false

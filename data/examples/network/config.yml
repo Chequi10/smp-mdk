@@ -14,11 +14,10 @@ models:
     libname: network/libnetwork.so
     params:
       nodes:
-        - node_a
+        - Master
         - node_b 
         - node_c
-        - node_d
-  - name: node_a
+  - name: Master
     class: Node
     libname: network/libnetwork.so
     params:
@@ -35,10 +34,4 @@ models:
     libname: network/libnetwork.so
     params:
       id: 12
-      master: false
-  - name: node_d
-    class: Node
-    libname: network/libnetwork.so
-    params:
-      id: 13    
       master: false
