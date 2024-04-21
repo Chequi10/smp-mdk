@@ -10,7 +10,7 @@ models:
       nodes: 
         - NODO_VIRTUAL_M
         - NODO_VIRTUAL_S
-        - NODO_VIRTUAL_E
+        - NODO_VIRTUAL_D
   - name: NODO_VIRTUAL_M
     class: NODO
     libname: segundo/libsegundo.so
@@ -31,7 +31,7 @@ models:
       dlc: 0xC
       payload0: 0x1  
       payload1: 0x2
-  - name: NODO_VIRTUAL_E
+  - name: NODO_VIRTUAL_D
     class: NODO
     libname: segundo/libsegundo.so
     params:
