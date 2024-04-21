@@ -14,27 +14,30 @@ models:
     libname: Red_CAN/libRed_CAN.so
     params:
       nodes:
-        - Ezequiel_Fernanda
-        - node_b 
-        - node_c
-  - name: Ezequiel_Fernanda
+        - CAN_NODE_A
+        - CAN_NODE_B 
+        - CAN_NODE_C
+  - name: CAN_NODE_A
     class: Node
     libname: Red_CAN/libRed_CAN.so
     params:
-      id: 10
-      len: 12
+      Can_Id: 0x0BADBABE
+      Len: 0x38
+      Payload: 0x4b
       master: true
-  - name: node_b
+  - name: CAN_NODE_B
     class: Node
     libname: Red_CAN/libRed_CAN.so
     params:
-      id: 11
-      len: 23
+      Can_Id: 0x0BADBAB2
+      Len: 0x38
+      Payload: 0x53
       master: false
-  - name: node_c
+  - name: CAN_NODE_C
     class: Node
     libname: Red_CAN/libRed_CAN.so
     params:
-      id: 12
-      len: 45
+      Can_Id: 0x0BADBAB1
+      Len: 0x38
+      Payload: 0x54
       master: false

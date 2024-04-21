@@ -3,11 +3,11 @@
 # Models
 models_path: "../../../build/models/"
 models:
-  - name: semaforo
-    class: Counter
+  - name: cuenta
+    class: ContadorSmp
     libname: primero/libprimero.so
     params: 
       frequency: 1.0
-      rojo: 10
-      amarillo: 20
-      verde : 30
+    
+
+

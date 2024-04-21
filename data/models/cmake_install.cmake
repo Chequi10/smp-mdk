@@ -48,6 +48,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ezequiel/simulador/smp-mdk/data/models/network/cmake_install.cmake")
   include("/home/ezequiel/simulador/smp-mdk/data/models/counter_rpc/cmake_install.cmake")
   include("/home/ezequiel/simulador/smp-mdk/data/models/primero/cmake_install.cmake")
+  include("/home/ezequiel/simulador/smp-mdk/data/models/Red_CAN/cmake_install.cmake")
 
 endif()
 

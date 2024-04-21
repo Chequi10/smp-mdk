@@ -12,8 +12,9 @@
 #include "Smp/Services/IEventManager.h"
 
 #include "IYAMLConfigurable.h"
-
+#include "protocol.h"
 #include "Message.h"
+#include "stm32canbusif.h"
 
 class Node;
 
@@ -21,6 +22,7 @@ class Node;
 class Bus : 
     public virtual Smp::IModel,
     public IYAMLConfigurable
+   // public stm32canbus_serialif
 {
 private:
     char* name;                     ///< Name of model.
@@ -32,6 +34,7 @@ private:
     void Init(); ///< Init private fields.
 
 public:
+
     Bus(Smp::String8 name, Smp::IComposite *parent) 
     {
         Init();
@@ -60,7 +63,7 @@ public:
 
     void Attach(Node* node);   
     void Inject(Message* msg); 
-    
+   
 private:    
     std::vector<Node*> m_nodes;
     std::vector<std::string> m_nodeNames;
@@ -71,8 +74,13 @@ private:
 class Node : 
     public virtual Smp::IModel,
     public IYAMLConfigurable
+  //  public stm32canbus_serialif
+  //  private protocol::packet_decoder,
+  //  private protocol::packet_encoder
+  
 {
 private:
+ 
         /// Private helper class for entry points
         class NodeEntryPoint : public Smp::IEntryPoint
         {
@@ -122,7 +130,9 @@ public:
         this->state = Smp::MSK_Created;
         this->parent = parent;
     }
-    
+       static constexpr size_t BUFSIZE = 64;
+       std::array<char, BUFSIZE> rx_buffer;
+    std::array<char, BUFSIZE> tx_buffer;
     virtual ~Node()
     {
         if (name) free(name);
@@ -144,14 +154,15 @@ public:
     void SetBus(Bus* bus) { this->m_bus = bus; }
     void Transmit(Message* msg);
     void Receive(Message* msg);
-    uint32_t GetId() const { return this->m_id; }
-    uint32_t longitud() const{return this->m_len;}
+    uint32_t GetId() const { return this->m_Can_Id; }
+
     void Sync();
 private:
     Bus* m_bus;
-    uint32_t m_id;
+    uint32_t m_Can_Id;
     bool m_isMaster;
-    uint32_t m_len;
+    uint32_t m_Len;
+    char m_Payload;
 };
 
 #endif // BUS_H

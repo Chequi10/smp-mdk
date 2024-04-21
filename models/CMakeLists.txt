@@ -1,5 +1,6 @@
 add_subdirectory(counter)
 add_subdirectory(network)
 add_subdirectory(counter_rpc)
-add_subdirectory(primero)
 add_subdirectory(Red_CAN)
+add_subdirectory(segundo)
+add_subdirectory(contadoreze)

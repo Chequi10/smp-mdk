@@ -9,7 +9,9 @@ project(Red_CAN)
 # add the executable
 add_library(${PROJECT_NAME} SHARED
     Red_CAN.cpp
-    ${LIBSMP2_SOURCES}
+    stm32canbusif.cpp
+    protocol.cpp 
+       ${LIBSMP2_SOURCES}
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE

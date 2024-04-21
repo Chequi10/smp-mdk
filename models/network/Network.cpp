@@ -171,7 +171,8 @@ void Node::Transmit(Message* msg)
 
 void Node::Receive(Message* msg)
 {
-    std::cout << this->GetName() << ": Message received" << std::endl;
+    std::cout << this->GetName() << ": Message received " << this->m_id << std::endl;
+  
 }
 
 void Node::Sync()

@@ -62,6 +62,15 @@
         "set": "cpp",
         "future": "cpp",
         "iomanip": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "*.ipp": "cpp",
+        "strstream": "cpp",
+        "bit": "cpp",
+        "codecvt": "cpp",
+        "complex": "cpp",
+        "shared_mutex": "cpp",
+        "cfenv": "cpp",
+        "typeindex": "cpp",
+        "variant": "cpp"
     }
 }

@@ -16,6 +16,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ezequiel/simulador/smp-mdk/examples/managed_counter/CMakeLists.txt"
   "/home/ezequiel/simulador/smp-mdk/libsmp2/CMakeLists.txt"
   "/home/ezequiel/simulador/smp-mdk/models/CMakeLists.txt"
+  "/home/ezequiel/simulador/smp-mdk/models/Red_CAN/CMakeLists.txt"
   "/home/ezequiel/simulador/smp-mdk/models/counter/CMakeLists.txt"
   "/home/ezequiel/simulador/smp-mdk/models/counter_rpc/CMakeLists.txt"
   "/home/ezequiel/simulador/smp-mdk/models/network/CMakeLists.txt"
@@ -102,6 +103,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "models/network/CMakeFiles/CMakeDirectoryInformation.cmake"
   "models/counter_rpc/CMakeFiles/CMakeDirectoryInformation.cmake"
   "models/primero/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "models/Red_CAN/CMakeFiles/CMakeDirectoryInformation.cmake"
   "simulator/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -115,6 +117,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "models/network/CMakeFiles/network.dir/DependInfo.cmake"
   "models/counter_rpc/CMakeFiles/counter_rpc.dir/DependInfo.cmake"
   "models/primero/CMakeFiles/primero.dir/DependInfo.cmake"
+  "models/Red_CAN/CMakeFiles/Red_CAN.dir/DependInfo.cmake"
   "simulator/CMakeFiles/simulator.dir/DependInfo.cmake"
   "tests/CMakeFiles/tests.dir/DependInfo.cmake"
   )

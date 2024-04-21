@@ -21,17 +21,17 @@ models:
     class: Node
     libname: network/libnetwork.so
     params:
-      id: 10
+      id: 1
       master: true
   - name: node_b
     class: Node
     libname: network/libnetwork.so
     params:
-      id: 11
+      id: 2
       master: false
   - name: node_c
     class: Node
     libname: network/libnetwork.so
     params:
-      id: 12
+      id: 5
       master: false

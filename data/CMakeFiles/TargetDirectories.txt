@@ -65,6 +65,13 @@
 /home/ezequiel/simulador/smp-mdk/data/models/primero/CMakeFiles/install.dir
 /home/ezequiel/simulador/smp-mdk/data/models/primero/CMakeFiles/install/local.dir
 /home/ezequiel/simulador/smp-mdk/data/models/primero/CMakeFiles/install/strip.dir
+/home/ezequiel/simulador/smp-mdk/data/models/Red_CAN/CMakeFiles/Red_CAN.dir
+/home/ezequiel/simulador/smp-mdk/data/models/Red_CAN/CMakeFiles/edit_cache.dir
+/home/ezequiel/simulador/smp-mdk/data/models/Red_CAN/CMakeFiles/rebuild_cache.dir
+/home/ezequiel/simulador/smp-mdk/data/models/Red_CAN/CMakeFiles/list_install_components.dir
+/home/ezequiel/simulador/smp-mdk/data/models/Red_CAN/CMakeFiles/install.dir
+/home/ezequiel/simulador/smp-mdk/data/models/Red_CAN/CMakeFiles/install/local.dir
+/home/ezequiel/simulador/smp-mdk/data/models/Red_CAN/CMakeFiles/install/strip.dir
 /home/ezequiel/simulador/smp-mdk/data/simulator/CMakeFiles/simulator.dir
 /home/ezequiel/simulador/smp-mdk/data/simulator/CMakeFiles/edit_cache.dir
 /home/ezequiel/simulador/smp-mdk/data/simulator/CMakeFiles/rebuild_cache.dir

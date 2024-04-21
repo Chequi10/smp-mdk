@@ -17,7 +17,7 @@ int run_simulation_service(const boost::program_options::variables_map& vm)
 		
 		sim.setupAndStart();
 
-		std::cout << "Receiving commands at port " << rpc_port << ". Press any key to stop service.";
+		std::cout << "Receiving commands at port " << rpc_port << ". Press any key to stop service."<< std::endl;
 		std::getchar();
 
 		sim.cleanupAndShutdown();
@@ -44,6 +44,7 @@ int run_simulation_service(const boost::program_options::variables_map& vm)
 
 int main(int argc,const char* argv[])
 {
+   
 	namespace po = boost::program_options;
 	po::options_description desc("Allowed options");
 	desc.add_options()

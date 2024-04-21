@@ -1,0 +1,10 @@
+# Simulation configuration
+
+# Models
+models_path: "../../../build/models/"
+models:
+  - name: cuenta
+    class: ContadorSmp
+    libname: contadoreze/libcontadoreze.so
+    params: 
+      frequency: 1.0

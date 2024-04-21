@@ -3,7 +3,7 @@
 # Models
 models_path: "../../../build/models/"
 models:
-  - name: semaforo
+  - name: cuenta
     class: Counter
     libname: counter/libcounter.so
     params: 

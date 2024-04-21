@@ -1,0 +1,43 @@
+# Simulation configuration
+
+# Models
+models_path: "../../../build/models/"
+models:
+  - name: CANBUS
+    class: BUS_CAN  
+    libname: segundo/libsegundo.so
+    params: 
+      nodes: 
+        - NODO_VIRTUAL_M
+        - NODO_VIRTUAL_S
+        - NODO_VIRTUAL_E
+  - name: NODO_VIRTUAL_M
+    class: NODO
+    libname: segundo/libsegundo.so
+    params:
+      status: 1
+      id: 0x30
+      canid: 1
+      dlc: 0xC
+      payload0: 0x34
+      payload1: 19
+  - name: NODO_VIRTUAL_S
+    class: NODO
+    libname: segundo/libsegundo.so
+    params:
+      status: 0
+      id: 0x31
+      canid: 4
+      dlc: 0xC
+      payload0: 0x1  
+      payload1: 0x2
+  - name: NODO_VIRTUAL_E
+    class: NODO
+    libname: segundo/libsegundo.so
+    params:
+      status: 0
+      id: 0x38
+      canid: 3
+      dlc: 0xC
+      payload0: 0x3  
+      payload1: 0x4
