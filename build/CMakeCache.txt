@@ -248,6 +248,18 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 Catch2_DIR:PATH=/usr/local/lib/cmake/Catch2
 
 //Value Computed by CMake
+Libcan_BINARY_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/build/models/Libcan
+
+//Value Computed by CMake
+Libcan_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+Libcan_LIB_DEPENDS:STATIC=general;Boost::filesystem;general;Boost::system;general;pthread;
+
+//Value Computed by CMake
+Libcan_SOURCE_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/models/Libcan
+
+//Value Computed by CMake
 Red_CAN_BINARY_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/build/models/Red_CAN
 
 //Value Computed by CMake
@@ -276,6 +288,18 @@ boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.71.0
 
 //The directory containing a CMake configuration file for boost_thread.
 boost_thread_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_thread-1.71.0
+
+//Value Computed by CMake
+can_BINARY_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/build/models/can
+
+//Value Computed by CMake
+can_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+can_LIB_DEPENDS:STATIC=general;Boost::filesystem;general;Boost::system;general;pthread;
+
+//Value Computed by CMake
+can_SOURCE_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/models/can
 
 //Value Computed by CMake
 contadoreze_BINARY_DIR:STATIC=/home/ezequiel/simulador/smp-mdk/build/models/contadoreze

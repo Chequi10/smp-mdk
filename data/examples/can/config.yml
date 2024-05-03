@@ -5,7 +5,7 @@ models_path: "../../../build/models/"
 models:
   - name: CANBUS
     class: BUS_CAN  
-    libname: segundo/libsegundo.so
+    libname: can/libcan.so
     params: 
       nodes: 
         - NODO_VIRTUAL_M
@@ -13,7 +13,7 @@ models:
         - NODO_VIRTUAL_D
   - name: NODO_VIRTUAL_M
     class: NODO
-    libname: segundo/libsegundo.so
+    libname: can/libcan.so
     params:
       status: 1
       id: 0x30
@@ -23,7 +23,7 @@ models:
       payload1: 19
   - name: NODO_VIRTUAL_S
     class: NODO
-    libname: segundo/libsegundo.so
+    libname: can/libcan.so
     params:
       status: 0
       id: 0x31
@@ -33,7 +33,7 @@ models:
       payload1: 0x2
   - name: NODO_VIRTUAL_D
     class: NODO
-    libname: segundo/libsegundo.so
+    libname: can/libcan.so
     params:
       status: 0
       id: 0x38

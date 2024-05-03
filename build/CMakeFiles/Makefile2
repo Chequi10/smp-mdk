@@ -157,7 +157,7 @@ models/all: models/counter/all
 models/all: models/network/all
 models/all: models/counter_rpc/all
 models/all: models/Red_CAN/all
-models/all: models/segundo/all
+models/all: models/can/all
 models/all: models/contadoreze/all
 .PHONY : models/all
 
@@ -166,7 +166,7 @@ models/preinstall: models/counter/preinstall
 models/preinstall: models/network/preinstall
 models/preinstall: models/counter_rpc/preinstall
 models/preinstall: models/Red_CAN/preinstall
-models/preinstall: models/segundo/preinstall
+models/preinstall: models/can/preinstall
 models/preinstall: models/contadoreze/preinstall
 .PHONY : models/preinstall
 
@@ -175,7 +175,7 @@ models/clean: models/counter/clean
 models/clean: models/network/clean
 models/clean: models/counter_rpc/clean
 models/clean: models/Red_CAN/clean
-models/clean: models/segundo/clean
+models/clean: models/can/clean
 models/clean: models/contadoreze/clean
 .PHONY : models/clean
 
@@ -193,6 +193,21 @@ models/Red_CAN/preinstall:
 # Recursive "clean" directory target.
 models/Red_CAN/clean: models/Red_CAN/CMakeFiles/Red_CAN.dir/clean
 .PHONY : models/Red_CAN/clean
+
+#=============================================================================
+# Directory level rules for directory models/can
+
+# Recursive "all" directory target.
+models/can/all: models/can/CMakeFiles/can.dir/all
+.PHONY : models/can/all
+
+# Recursive "preinstall" directory target.
+models/can/preinstall:
+.PHONY : models/can/preinstall
+
+# Recursive "clean" directory target.
+models/can/clean: models/can/CMakeFiles/can.dir/clean
+.PHONY : models/can/clean
 
 #=============================================================================
 # Directory level rules for directory models/contadoreze
@@ -253,21 +268,6 @@ models/network/preinstall:
 # Recursive "clean" directory target.
 models/network/clean: models/network/CMakeFiles/network.dir/clean
 .PHONY : models/network/clean
-
-#=============================================================================
-# Directory level rules for directory models/segundo
-
-# Recursive "all" directory target.
-models/segundo/all: models/segundo/CMakeFiles/segundo.dir/all
-.PHONY : models/segundo/all
-
-# Recursive "preinstall" directory target.
-models/segundo/preinstall:
-.PHONY : models/segundo/preinstall
-
-# Recursive "clean" directory target.
-models/segundo/clean: models/segundo/CMakeFiles/segundo.dir/clean
-.PHONY : models/segundo/clean
 
 #=============================================================================
 # Directory level rules for directory simulator
@@ -332,12 +332,12 @@ libsmp2/CMakeFiles/smp2.dir/clean:
 examples/counter/CMakeFiles/counter_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/counter/CMakeFiles/counter_example.dir/build.make examples/counter/CMakeFiles/counter_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/counter/CMakeFiles/counter_example.dir/build.make examples/counter/CMakeFiles/counter_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38,39,40 "Built target counter_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50 "Built target counter_example"
 .PHONY : examples/counter/CMakeFiles/counter_example.dir/all
 
 # Build rule for subdir invocation for target.
 examples/counter/CMakeFiles/counter_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezequiel/simulador/smp-mdk/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezequiel/simulador/smp-mdk/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/counter/CMakeFiles/counter_example.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezequiel/simulador/smp-mdk/build/CMakeFiles 0
 .PHONY : examples/counter/CMakeFiles/counter_example.dir/rule
@@ -358,7 +358,7 @@ examples/counter/CMakeFiles/counter_example.dir/clean:
 examples/managed_counter/CMakeFiles/managed_counter_example.dir/all:
 	$(MAKE) $(MAKESILENT) -f examples/managed_counter/CMakeFiles/managed_counter_example.dir/build.make examples/managed_counter/CMakeFiles/managed_counter_example.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/managed_counter/CMakeFiles/managed_counter_example.dir/build.make examples/managed_counter/CMakeFiles/managed_counter_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60 "Built target managed_counter_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=61,62,63,64,65,66,67,68,69,70 "Built target managed_counter_example"
 .PHONY : examples/managed_counter/CMakeFiles/managed_counter_example.dir/all
 
 # Build rule for subdir invocation for target.
@@ -384,12 +384,12 @@ examples/managed_counter/CMakeFiles/managed_counter_example.dir/clean:
 models/counter/CMakeFiles/counter.dir/all:
 	$(MAKE) $(MAKESILENT) -f models/counter/CMakeFiles/counter.dir/build.make models/counter/CMakeFiles/counter.dir/depend
 	$(MAKE) $(MAKESILENT) -f models/counter/CMakeFiles/counter.dir/build.make models/counter/CMakeFiles/counter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29 "Built target counter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40 "Built target counter"
 .PHONY : models/counter/CMakeFiles/counter.dir/all
 
 # Build rule for subdir invocation for target.
 models/counter/CMakeFiles/counter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezequiel/simulador/smp-mdk/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezequiel/simulador/smp-mdk/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/counter/CMakeFiles/counter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezequiel/simulador/smp-mdk/build/CMakeFiles 0
 .PHONY : models/counter/CMakeFiles/counter.dir/rule
@@ -410,7 +410,7 @@ models/counter/CMakeFiles/counter.dir/clean:
 models/network/CMakeFiles/network.dir/all:
 	$(MAKE) $(MAKESILENT) -f models/network/CMakeFiles/network.dir/build.make models/network/CMakeFiles/network.dir/depend
 	$(MAKE) $(MAKESILENT) -f models/network/CMakeFiles/network.dir/build.make models/network/CMakeFiles/network.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=61,62,63,64,65,66,67,68,69 "Built target network"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=71,72,73,74,75,76,77,78,79 "Built target network"
 .PHONY : models/network/CMakeFiles/network.dir/all
 
 # Build rule for subdir invocation for target.
@@ -436,7 +436,7 @@ models/network/CMakeFiles/network.dir/clean:
 models/counter_rpc/CMakeFiles/counter_rpc.dir/all:
 	$(MAKE) $(MAKESILENT) -f models/counter_rpc/CMakeFiles/counter_rpc.dir/build.make models/counter_rpc/CMakeFiles/counter_rpc.dir/depend
 	$(MAKE) $(MAKESILENT) -f models/counter_rpc/CMakeFiles/counter_rpc.dir/build.make models/counter_rpc/CMakeFiles/counter_rpc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50 "Built target counter_rpc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60 "Built target counter_rpc"
 .PHONY : models/counter_rpc/CMakeFiles/counter_rpc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -482,30 +482,30 @@ models/Red_CAN/CMakeFiles/Red_CAN.dir/clean:
 .PHONY : models/Red_CAN/CMakeFiles/Red_CAN.dir/clean
 
 #=============================================================================
-# Target rules for target models/segundo/CMakeFiles/segundo.dir
+# Target rules for target models/can/CMakeFiles/can.dir
 
 # All Build rule for target.
-models/segundo/CMakeFiles/segundo.dir/all:
-	$(MAKE) $(MAKESILENT) -f models/segundo/CMakeFiles/segundo.dir/build.make models/segundo/CMakeFiles/segundo.dir/depend
-	$(MAKE) $(MAKESILENT) -f models/segundo/CMakeFiles/segundo.dir/build.make models/segundo/CMakeFiles/segundo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=70,71,72,73,74,75,76,77,78,79 "Built target segundo"
-.PHONY : models/segundo/CMakeFiles/segundo.dir/all
+models/can/CMakeFiles/can.dir/all:
+	$(MAKE) $(MAKESILENT) -f models/can/CMakeFiles/can.dir/build.make models/can/CMakeFiles/can.dir/depend
+	$(MAKE) $(MAKESILENT) -f models/can/CMakeFiles/can.dir/build.make models/can/CMakeFiles/can.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target can"
+.PHONY : models/can/CMakeFiles/can.dir/all
 
 # Build rule for subdir invocation for target.
-models/segundo/CMakeFiles/segundo.dir/rule: cmake_check_build_system
+models/can/CMakeFiles/can.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezequiel/simulador/smp-mdk/build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/segundo/CMakeFiles/segundo.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 models/can/CMakeFiles/can.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ezequiel/simulador/smp-mdk/build/CMakeFiles 0
-.PHONY : models/segundo/CMakeFiles/segundo.dir/rule
+.PHONY : models/can/CMakeFiles/can.dir/rule
 
 # Convenience name for target.
-segundo: models/segundo/CMakeFiles/segundo.dir/rule
-.PHONY : segundo
+can: models/can/CMakeFiles/can.dir/rule
+.PHONY : can
 
 # clean rule for target.
-models/segundo/CMakeFiles/segundo.dir/clean:
-	$(MAKE) $(MAKESILENT) -f models/segundo/CMakeFiles/segundo.dir/build.make models/segundo/CMakeFiles/segundo.dir/clean
-.PHONY : models/segundo/CMakeFiles/segundo.dir/clean
+models/can/CMakeFiles/can.dir/clean:
+	$(MAKE) $(MAKESILENT) -f models/can/CMakeFiles/can.dir/build.make models/can/CMakeFiles/can.dir/clean
+.PHONY : models/can/CMakeFiles/can.dir/clean
 
 #=============================================================================
 # Target rules for target models/contadoreze/CMakeFiles/contadoreze.dir
@@ -514,7 +514,7 @@ models/segundo/CMakeFiles/segundo.dir/clean:
 models/contadoreze/CMakeFiles/contadoreze.dir/all:
 	$(MAKE) $(MAKESILENT) -f models/contadoreze/CMakeFiles/contadoreze.dir/build.make models/contadoreze/CMakeFiles/contadoreze.dir/depend
 	$(MAKE) $(MAKESILENT) -f models/contadoreze/CMakeFiles/contadoreze.dir/build.make models/contadoreze/CMakeFiles/contadoreze.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18,19,20 "Built target contadoreze"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ezequiel/simulador/smp-mdk/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30 "Built target contadoreze"
 .PHONY : models/contadoreze/CMakeFiles/contadoreze.dir/all
 
 # Build rule for subdir invocation for target.
