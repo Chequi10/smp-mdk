@@ -1,5 +1,5 @@
 #include <iostream>
-#include "API.h"
+#include "Model_CAN.h"
 #include "Smp/ISimulator.h"
 #include "Smp/IPublication.h"
 #include <boost/format.hpp>
@@ -168,7 +168,7 @@ void NODO::Connect(Smp::ISimulator *simulator)
         if (this->status_yml != 0)
         {
             scheduler->AddSimulationTimeEvent(starting, 0, 1000000000, 0);
-            scheduler->AddSimulationTimeEvent(sending, 0, 1000000000, -1);
+            scheduler->AddSimulationTimeEvent(sending, 0,   500000000, -1);
         }
         // eventManager->Subscribe(Smp::Services::SMP_EnterStandbyId, reset);
     }

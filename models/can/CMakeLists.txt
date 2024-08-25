@@ -8,7 +8,7 @@ project(can)
 
 # add the executable
 add_library(${PROJECT_NAME} SHARED
-    API.cpp
+    Model_CAN.cpp
     SERIE.cpp
     protocol.cpp
     ${LIBSMP2_SOURCES}
